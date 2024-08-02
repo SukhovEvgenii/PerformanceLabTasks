@@ -2,6 +2,10 @@ import java.io.*;
 
 public class task2 {
     public static void main(String[] args) {
+        if (args.length != 2) {
+            System.out.println("The program must have 2 arguments");
+            return;
+        }
         File fileWithCircleParameters = new File(args[0]);
         File fileWithDotsCoordinates = new File(args[1]);
         byte maxDotsCount = 100;
